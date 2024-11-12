@@ -2,17 +2,16 @@
   <div>
     <div class="flex mt-6 mb-10">
       <div class="w-full md:max-w-6xl mx-auto px-4 flex md:flex-row-reverse flex-wrap">
-        <div class="w-full md:w-1/2 md:p-6">
-          <div class="border rounded-md p-6 shadow-md sticky top-4">
+        <div class="w-full md:w-1/2 mx-auto md:p-6">
+          <div class="rounded-md p-6 sticky top-4">
             <h2 class="font-semibold text-2xl">
-              Login to OpnForm
+              To be replaced w/ icrewsystems SSO
             </h2>
             <small>Welcome back! Please enter your details.</small>
-
             <login-form />
           </div>
         </div>
-        <div class="w-full md:w-1/2 md:p-6 mt-8 md:mt-0 ">
+        <!-- <div class="w-full md:w-1/2 md:p-6 mt-8 md:mt-0 ">
           <h1 class="font-bold">
             Create beautiful forms and share them anywhere
           </h1>
@@ -45,10 +44,10 @@
               Unlimited submissions
             </p>
           </div>
-<!--          <div class="mt-3 p-6">-->
-<!--            <testimonials />-->
-<!--          </div>-->
-        </div>
+         <div class="mt-3 p-6">
+           <testimonials />
+         </div>
+        </div> -->
       </div>
     </div>
     <open-form-footer />

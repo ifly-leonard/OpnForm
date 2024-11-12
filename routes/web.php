@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', function() {
+    return view('home');
+});
+
 Route::post(
     '/stripe/webhook',
     [\App\Http\Controllers\Webhook\StripeController::class, 'handleWebhook']

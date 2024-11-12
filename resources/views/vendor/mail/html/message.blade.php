@@ -3,7 +3,9 @@
 @slot('header')
 @if (!(isset($noBranding) && $noBranding))
     @component('mail::header', ['url' => config('app.url')])
-    {{ config('app.name') }}
+    <img src="https://icrewsystems.com/frontend/public/images/logos/icrewsystems_logo_highres.png" alt="Cerebro - icrewsystems" srcset="" style="width: 150px; height: auto;">
+    <br>
+    <small>{{ config('app.name') }}</small>
     @endcomponent
 @else
     <div style="margin-top:25px;" />
@@ -26,7 +28,7 @@
 @slot('footer')
 @component('mail::footer')
 @if (!(isset($noBranding) && $noBranding))
-    © {{ date('Y') }} {{ config('app.name') }}. @lang('All rights reserved.')
+  {{ config('app.name') }} © {{ date('Y') }}. @lang('All rights reserved.')
 @endif
 @endcomponent
 @endslot

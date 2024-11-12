@@ -3,7 +3,7 @@
     <!-- Form fields selection -->
     <div class="w-full md:w-1/2 lg:w-2/5 border-r relative overflow-y-scroll md:max-w-sm flex-shrink-0">
       <div class="p-4 bg-blue-50 border-b text-nt-blue-dark md:hidden">
-        We suggest you create this form on a device with a larger screen such as computed. That will allow you
+        We suggest you create this form on a device with a larger screen such as a computer. That will allow you
         to preview your form changes.
       </div>
       <div class="p-4 pb-0">

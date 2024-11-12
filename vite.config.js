@@ -1,6 +1,9 @@
 import { defineConfig } from 'vite'
 import laravel from 'laravel-vite-plugin'
 import vue from '@vitejs/plugin-vue2'
+import basicSsl from '@vitejs/plugin-basic-ssl';
+
+const host = 'opnform.test';
 
 export default defineConfig({
   esbuild: {
@@ -12,7 +15,6 @@ export default defineConfig({
       input: [
         'resources/js/app.js'
       ],
-      valetTls: 'opnform.test'
     }),
     vue({
       template: {
@@ -21,7 +23,8 @@ export default defineConfig({
           includeAbsolute: false
         }
       }
-    })
+    }),
+    // basicSsl() // This enables HTTPS with a self-signed certificate
   ],
   optimizeDeps: {
     exclude: [
@@ -33,5 +36,10 @@ export default defineConfig({
       '~': '/resources/js',
       '@': '/resources'
     }
-  }
+  },
+  // server: {
+  //   host,
+  //   hmr: { host },
+  //   https: true, // Enable HTTPS without needing the custom certificate path
+  // },
 })

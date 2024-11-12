@@ -28,7 +28,7 @@
       <v-button dusk="btn_login" :loading="form.busy">Log in to continue</v-button>
 
       <p class="text-gray-500 mt-4">
-        Don't have an account?  
+        Don't have an account?
         <a href="#" v-if="isQuick" @click.prevent="$emit('openRegister')" class="font-semibold ml-1">Sign Up</a>
         <router-link v-else :to="{name:'register'}" class="font-semibold ml-1">Sign Up</router-link>
       </p>
@@ -56,7 +56,7 @@ export default {
       required: false,
       default: false
     }
-  }, 
+  },
 
   data: () => ({
     form: new Form({

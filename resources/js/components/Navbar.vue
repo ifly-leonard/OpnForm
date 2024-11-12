@@ -8,9 +8,8 @@
             <span
               class="ml-2 text-md hidden sm:inline text-black dark:text-white"
             >
-              {{ appName }}</span><span
-            class="bg-gray-100 text-gray-600 font-semibold inline-block ml-1 px-2 rounded-full text-black text-xs tracking-wider"
-          >BETA</span>
+              {{ appName }}</span>
+              <span class="bg-gray-100 text-gray-600 font-semibold inline-block ml-1 px-2 rounded-full text-black text-xs tracking-wider">BETA</span>
           </router-link>
           <workspace-dropdown class="ml-6"/>
         </div>
@@ -107,7 +106,7 @@
               </div>
             </div>
             <div>
-              <a class="m-1.5" :href="githubUrl" target="_blank">
+              <!-- <a class="m-1.5" :href="githubUrl" target="_blank">
                 <button
                   class="duration-200 text-gray-600 hover:text-blue-600 ease-in focus:outline-none focus:ring-2 focus:ring-gray-100 focus:ring-offset-2 focus:ring-offset-gray-50 font-semibold dark:bg-white p-2 rounded-full rounded-lg text-base text-center transition dark:text-white"
                   v-track.github_link_click
@@ -121,7 +120,7 @@
                     </g>
                   </svg>
                 </button>
-              </a>
+              </a> -->
             </div>
           </div>
         </div>
