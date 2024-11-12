@@ -16,7 +16,8 @@ class CreateFormSubmissionsTable extends Migration
         Schema::create('form_submissions', function (Blueprint $table) {
             $table->id();
             $table->foreignIdFor(\App\Models\Forms\Form::class,'form_id');
-            $table->jsonb('data')->default('{}');
+            // $table->json('data')->default('{}');
+            $table->json('data')->nullable();
             $table->timestamps();
         });
     }
